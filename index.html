@@ -16,32 +16,33 @@
 <body class="bg-gray-100 text-gray-800">
     <!-- Lien pour la police arabe -->
 <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
-
-<header class="bg-green-700 text-white p-4 max-w-7xl mx-auto relative flex items-center justify-start ">
+<header class="bg-green-700 text-white p-4 w-full flex flex-wrap items-center justify-start gap-4">
   <!-- Bouton menu hamburger -->
-  <button id="menu-btn" class="text-white focus:outline-none mr-4">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+  <button id="menu-btn" class="text-white focus:outline-none">
+    <!-- Icône menu (par exemple 3 lignes) -->
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+         xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
     </svg>
   </button>
 
   <!-- Logo -->
-  <div class = "flex-shrink-0">
-    <img src="images/tinlaflogo (1).jpg" alt="Logo de l'association" class="h-24 w-24 object-contain">
+  <div class="flex-shrink-0">
+    <img src="images/tinlaflogo (1).jpg" alt="Logo de l'association" class="h-20 w-20 object-contain">
   </div>
 
-  <!-- Titres centrés verticalement -->
-  <div class="absolute left-1/2 transform -translate-x-1/2 text-center">
-    <!-- Titre arabe -->
-    <h1 class="text-2xl font-bold font-[Amiri]" dir="rtl" lang="ar">
+  <!-- Titres -->
+  <div class="flex flex-col justify-center ml-4">
+    <h1 class="text-xl sm:text-2xl font-bold font-[Amiri]" dir="rtl" lang="ar">
       جمعية تنلاف للتنمية والتعاون
     </h1>
-    <!-- Titre français -->
-    <h2 class="text-lg font-semibold">
+    <h2 class="text-sm sm:text-lg font-semibold">
       Association TINLAF pour le Développement et la Coopération
     </h2>
   </div>
 </header>
+
 
 <!-- Menu latéral caché -->
 <nav id="sidebar" class="fixed top-0 left-0 h-full w-64 bg-green-700 text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
